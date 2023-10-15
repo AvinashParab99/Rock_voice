@@ -85,14 +85,14 @@ def calculate_expression(expression):
 
 def welcome():
     x = datetime.datetime.now().hour
-    if x > 12 and x < 17:
+    if 12 <= x < 17:
         speak("Hey Good Afternoon")
-    elif x > 17 and x < 20:
-        speak("Hey Good evening")
-    elif x > 20 and x < 5:
-        speak("Hey Good night")
+    elif 17 <= x < 20:
+        speak("Hey Good Evening")
+    elif 20 <= x < 5:
+        speak("Hey Good Night")
     else:
-        speak("Hey Good morning")
+        speak("Hey Good Morning")
 
 
 #9 wickipedia
